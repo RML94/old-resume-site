@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/icons.css">
+
+        <script src="quiz.js"></script>
+        <script src="question.js"></script>
+        <script src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <title>Rachelle Lee | Web Developer</title>
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="text-box">
+                <div class="name-box">
+                    <img src="img/logo-white.png" alt="Crown" class="logo">
+                    <h1 class="name">Rachelle Lee</h1>
+                </div>
+
+                <div class="sub-name-box">
+                    <h3 class="sub-name">Web Developer</h3>
+                    <div class="arrow-box">
+                        <a href=#about>
+                            <img src="img/arrow.svg" alt="arrow" class="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            $(document).ready(function(){
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            window.location.hash = hash;
+                            });
+                    }
+                });
+            });
+        </script>
+
+        <main>
+            <section class="about" id="about">
+                <span class="about-head">ABOUT ME</span><br> 
+                <p class="hey">Hey there! I'm  <span class="first-n">Rachelle.</span></p>
+                <p class="about-paragraph">
+                 I am a very passionate, creative and innovative Web Developer based in the DC Metro Area.
+                 I graduated with a Bachelor of Science in Computer Science from Towson University. Throughout my college and professional career, I have developed both technical and interpersonal skills that make me a very well-rounded developer. 
+                 <br><br>
+                I love being creative and trying new things! I aim to never stop learning, whether that is in my career or just growing as a person. My interests outside of work include obsessive learning about all things health related, fitness and drawing.</p> 
+            </section>
+
+            <section class="skills" id="skills">
+                <span class="skills-head">SKILLS</span><br>
+                <p class="skills-paragraph">I have a diverse set of skills with a wide range of proficienies in different languages, both front-end and back-end. With these skills I am able to create beautiful, responsive and dynamic web pages. <br><br>
+
+                I believe in focusing on all steps in the process from planning using wireframes, documents with Volere Requirements Templates and an emphasis on UI / UX, all the way to debugging and making the web pages responsive to any device.<br><br>
+
+                I am well versed in HTML5, CSS3 and JavaScript. I am most proficient in AngularJS, however I am also able to pick up on other frameworks if required! My main experience is in front-end development, but I also have experience working with PHP and MySQL to make dynamic pages that interact with databases. Knowledge of computer graphics helps when making interactive web pages and animations. Having an eye for design, focusing on creativity and being innovative is just icing on the cake!<br><br>
+
+                While technical skills are very important, people skills are also equally as important. Communication, speech and verbal writing classes have taught me how to effectively communicate with others. I have worked on teams to help collaborate and come together to meet a common goal for the client. I also have experience being a leader and taking the initiative to keep a team and the flow of the project on track.</p>
+
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="skill-box">
+                            <i class="icon-basic-todo skills-icon"></i>
+                            <h3 class="skill-name">Planning</h3>
+                            <p class="skill-text">
+                                UI / UX Design<br>
+                                Agile Systems<br>
+                                Wireframes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="skill-box">
+                            <i class="icon-basic-display skills-icon"></i>
+                            <h3 class="skill-name">Front-End</h3>
+                            <p class="skill-text">
+                                HTML5<br>
+                                CSS3<br>
+                                JavaScript<br>
+                                AngularJS
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="skill-box">
+                            <i class="icon-basic-server2 skills-icon"></i>
+                            <h3 class="skill-name">Back-End</h3>
+                            <p class="skill-text">
+                                PHP<br>
+                                MySQL
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="skill-box">
+                            <i class="icon-basic-share skills-icon"></i>
+                            <h3 class="skill-name">Others</h3>
+                            <p class="skill-text">
+                                Responsive Design<br>
+                                Git / GitHub
+                                Command Line
+                                Chrome Dev Tools
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="col-1-of-2">
+                        <div class="skill-box">
+                            <i class="icon-basic-todo skills-icon"></i>
+                            <h3 class="skill-name">Planning</h3>
+                            <p class="skill-text">
+                                UI / UX Design<br>
+                                Agile Systems<br>
+                                Wireframes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <div class="skill-box">
+                            <i class="icon-basic-display skills-icon"></i>
+                            <h3 class="skill-name skill-name-front">Front-End</h3>
+                            <p class="skill-text">
+                                HTML5<br>
+                                CSS3<br>
+                                JavaScript<br>
+                                AngularJS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-3">
+                    <div class="col-1-of-2">
+                        <div class="skill-box">
+                            <i class="icon-basic-server2 skills-icon"></i>
+                            <h3 class="skill-name skill-name-back">Back-End</h3>
+                            <p class="skill-text">
+                                PHP<br>
+                                MySQL
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <div class="skill-box">
+                            <i class="icon-basic-share skills-icon"></i>
+                            <h3 class="skill-name">Others</h3>
+                            <p class="skill-text">
+                                Git / GitHub
+                                Command Line
+                                Chrome Dev Tools
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <span class="contact-head">Let's Work Together!</span><br>
+                <p class="contact-paragraph">If any of my skills are of interest to you and you would like to learn more about me, then feel free to send over an email and I would love to chat! <br><br>
+                </p>
+                <p class="email">Email:</p>
+                <a href="mailto:rachelle.lee94@gmail.com" target="_top" class="e-link">rachelle.lee94@gmail.com</a>
+                <p class="click">(CLICK ME)</p>
+                <a href="/RachelleLeeResume.pdf" target="_blank" class="btn btn-purple">Resume</a>
+            </section>
+
+            <!-- <section class="quiz" id="quiz">
+                <span class="quiz-head">QUIZ!</span>
+                <div class="grid">
+                    <div id="quiz">
+
+                        <p id="question"></p>
+
+                        <div class="buttons">
+                            <button id="btn0"><span id="choice0"></span></button>
+                            <button id="btn1"><span id="choice1"></span></button>
+                            <button id="btn2"><span id="choice2"></span></button>
+                            <button id="btn3"><span id="choice3"></span></button>
+                        </div>
+
+                        <hr style="margin-top: 50px">
+                    </div>
+                </div>
+
+            </section> -->
+        </main>
+        <footer class="footer">
+            <img src="img/logo-white.png" alt="Crown" class="foot-logo">
+            <p class="foot-words">Made by Rachelle Lee</p>
+        </footer>      
+    </body>
+</html>
